@@ -1,0 +1,1 @@
+[User considerations for identity and age verification](credentials-age-considerations.md) contains in-progress list of concerns and implications of identity-verification and, in particular, age-verification technologies, for consideration in Internet and Web standardization.
