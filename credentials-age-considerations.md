@@ -36,6 +36,10 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 ## Rigidity
 
 * if age-gating or identity credentials are in use, to what level will they be required, and what are the impacts for people who do not have the technology or credentials, or are unwilling to use them? (discrimination)
+* will normal people be required to enroll in these systems?  to present them in certain contexts?
+* will a verifier be obliged to offer this form of identification/verification?  will the verifier be able to offer other forms of verification?
+* even if not formally mandatory, what social/economic/cultural pressures push in their direction?
+* what sort of pushback is available to people who do not participate?
 
 ## Consolidation
 
