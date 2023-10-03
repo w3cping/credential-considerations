@@ -17,7 +17,7 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 * how are identity/age characteristics shared with origins? (minimization; control)
 * what does the identity provider learn about the user's activity?
 * do identities or identity properties contribute to linkability of activity between or within sites? 
-* when and in what contexts will age or credentials be requested once available?
+* when and in what contexts will age or credentials be requested once available? (see Rigidity and Accountability, below)
 * what information does a user have when deciding whether to share credential information? how will information be retained, used, sold or shared? (transparency; control)
 
 There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and surveillance and discrimination become commonplace.
