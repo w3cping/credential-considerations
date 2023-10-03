@@ -49,7 +49,10 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 ## Accountability
 
 * how will abuse of age and credential presentation/collection be mitigated and addressed?
+* To the extent that selective disclosure is possible but not always in play (e.g., a system that allows selective disclosure of only year of birth when viewing a tobacco site, but also enables a request for full identity disclosure at a banking site), how does the user know what is being requested of them, and whether it is a reasonable request for the context?
+* how does the user (or their agent) know to whom they are disclosing this information?
 * how will sites that improperly collect, or use credentials in abusive ways, be held accountable? (these are questions both for user agents and out-of-band accountability mechanisms)
+* These questions are twofold: what kinds of use case regulations do we expect to be placed on these systems (legally/politically)? and what protocol mechanisms will be in place that support such regulations?
 
 ## Alternatives
 
