@@ -56,15 +56,14 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 
 ## Definitions
 
-user
+user, holder
 
-relying site (or origin)
+relying site (or origin), verifier
 
 attester, identity provider
 
-online presentation vs. in-person presentation
-: Digital identity mechanisms may be used online (presenting to a site being visited on a device) or for in-person presentation (using a mobile device to show a credential to a nearby person or device). Many of these concerns are still applicable, but in-person presentation is a very different context from the browseable web.
-
+remote presentation vs. in-person presentation
+: Digital identity mechanisms may be used remotely (presenting to a non-local website being visited on a device) or for in-person presentation (using a mobile device to show a credential to a nearby person or device). Many of these concerns are still applicable, but in-person presentation is a very different context from the browseable web.
 
 ## Other resources
 
