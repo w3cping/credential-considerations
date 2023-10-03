@@ -63,6 +63,9 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 
 * to what extent do these systems rely on centralized providers?
 * how can an origin reliably accept attestations or credentials from a wide range of providers, rather than just 1 or 2?
+* is any part of the system governed by tightly controlled intellectual property, in the form of patents, trade secrets, etc, that would limit the ability of the public to engage with the system without negotiating with the holder of the IP?
+* how much does the scheme depend on the user carrying a device or software bundle that is deliberately designed to treat the user themselves as an adversary?
+* Is it possible to create a compliant implementation that actually interoperates with the deployed ecosystem, or are their points of cryptographic control that will be used to prohibit interoperability with user-controlled devices?
 
 ## Accountability
 
