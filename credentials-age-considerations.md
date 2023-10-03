@@ -22,6 +22,24 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 
 There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and surveillance and discrimination become commonplace.
 
+## Online vs. Offline
+
+* When a presentation/verification event happens, do either the holder or the verifier need to be online (aside from the connectivity *between* the holder and the verifier)?
+* If so, who else do they need to communicate with?  What does that party learn about the transaction?
+* What happens to the transaction of the remote parties are unavailable?
+
+## Revocation
+
+* how (if ever) are credentials revoked?
+* what organizational process governs the revocation?
+* what kinds of delays are inherent in revocation?
+* What happens to the system when revocation information (or confirmation of non-revocation) is not available?
+
+## In-Person Presentation
+
+* While we're talking mainly about web-based transactions, are there opportunities to use the same mechanism for in-person presentation (e.g., proving age during a purchase)?
+* What are the protocol differences to be aware of during an in-person presentation?
+
 ## Free expression
 
 * who may be excluded from online services by this technology and requirements? 
