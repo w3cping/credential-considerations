@@ -1,4 +1,4 @@
-# User considerations for identity and age verification
+# User considerations for credential presentation on the Web
 
 ### Status of this document
 
@@ -8,16 +8,16 @@ Editor: [Nick Doty](https://npdoty.name), <ndoty@cdt.org>
 
 ## Abstract
 
-Many websites, some in response to legal requirements, wish to confirm the user's age or some other property from an identity credential, often to limit access to resources or use of a service. Web standards have been proposed to allow sites to request, from a user agent (browser or wallet provider) either an identity credential, or confirmation of some particular property (age, age bracket, institutional affiliation, etc.). These proposals introduce various concerns for the rights of users, including privacy and free expression online.
+Many websites, some in response to legal requirements, wish to access an issued identity credential for the user, often to limit access to use of a service to people of a certain age or to confirm a legal identity. Web standards have been proposed to allow sites to request, from a user agent (browser or wallet provider) either an identity credential, or confirmation of some particular property (age, age bracket, institutional affiliation, etc.). These proposals introduce various concerns for the rights of users, including privacy and free expression online.
 
 Separate from whether these technical mechanisms are advisable at all, or advisable for Internet or Web standardization, any proposal should directly consider the impacts on human rights (listed, non-exhaustively, below).
 
 ## Privacy
 
-* how are identity/age characteristics shared with origins? (minimization; control)
+* how are identity characteristics shared with origins? (minimization; control)
 * what does the identity provider learn about the user's activity?
 * do identities or identity properties contribute to linkability of activity between or within sites? 
-* when and in what contexts will age or credentials be requested once available? (see Rigidity and Accountability, below)
+* when and in what contexts will credentials (or particular credential properties such as age) be requested once available? (see Rigidity and Accountability, below)
 * what information does a user have when deciding whether to share credential information? how will information be retained, used, sold or shared? (transparency; control)
 
 There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and surveillance and discrimination become commonplace.
@@ -34,6 +34,7 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 * what organizational process governs the revocation?
 * what kinds of delays are inherent in revocation?
 * What happens to the system when revocation information (or confirmation of non-revocation) is not available?
+* To whom is revocation information made available? (Does every service I've authenticated with learn when my driver's license is revoked or my legal name is changed?)
 
 ## In-Person Presentation
 
@@ -48,7 +49,7 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 ## Bias and efficacy
 
 * how effective for the specific use cases are age verification or identity attribution presentation technologies? if they aren't fully effective, what is the trade-off between their harms and efficacy?
-* what bias may be present in 
+* what bias may be present? 
 * how is remediation handled, when an estimate or presented characteristic is incorrect?
 
 ## Rigidity
@@ -69,11 +70,11 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 
 ## Accountability
 
-* how will abuse of age and credential presentation/collection be mitigated and addressed?
+* how will abuse of credential presentation be mitigated and addressed?
 * To the extent that selective disclosure is possible but not always in play (e.g., a system that allows selective disclosure of only year of birth when viewing a tobacco site, but also enables a request for full identity disclosure at a banking site), how does the user know what is being requested of them, and whether it is a reasonable request for the context?
 * how does the user (or their agent) know to whom they are disclosing this information?
 * how will sites that improperly collect, or use credentials in abusive ways, be held accountable? (these are questions both for user agents and out-of-band accountability mechanisms)
-* These questions are twofold: what kinds of use case regulations do we expect to be placed on these systems (legally/politically)? and what protocol mechanisms will be in place that support such regulations?
+* what kinds of use case regulations do we expect to be placed on these systems (legally/politically)? and what protocol mechanisms will be in place that support such regulations?
 
 ## Alternatives
 
@@ -81,6 +82,14 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 * what are the alternative, non-credential means to address some of these use cases (including child safety online)?
 
 ---
+
+## Use (and abuse) cases
+
+### age verification
+
+### government services
+
+### account creation / authentication
 
 ## Definitions
 
