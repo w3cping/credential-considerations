@@ -20,7 +20,7 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 * when and in what contexts will credentials (or particular credential properties such as age) be requested once available? (see Rigidity and Accountability, below)
 * what information does a user have when deciding whether to share credential information? how will information be retained, used, sold or shared? (transparency; control)
 
-There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and surveillance and discrimination become commonplace.
+There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and **surveillance** becomes commonplace.
 
 ## Online vs. Offline
 
@@ -46,6 +46,8 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 * who may be excluded from online services by this technology and requirements? 
 * who will be discouraged from browsing or communicating by an age or credential requirement? (chilling effects)
 
+Privacy risks also have free expression implications here: who will be restricted from speaking or accessing information on the Web when there is a risk that a government-issued identity may be linked to that reading or writing?
+
 ## Bias and efficacy
 
 * how effective for the specific use cases are age verification or identity attribution presentation technologies? if they aren't fully effective, what is the trade-off between their harms and efficacy?
@@ -59,6 +61,8 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 * will a verifier be obliged to offer this form of identification/verification?  will the verifier be able to offer other forms of verification?
 * even if not formally mandatory, what social/economic/cultural pressures push in their direction?
 * what sort of pushback is available to people who do not participate?
+
+Access to high-assurance identity credentials presents risks of **discrimination** (either by facilitating intentional explicit discrimination, or through inaccuracies, biases or unequal levels of adoption); and of **exclusion** of people who do not have credentials, don't wish to present them online, or are excluded because of something about them (their age or immigration status, for example).
 
 ## Consolidation
 
@@ -91,6 +95,10 @@ There is a real danger of a papers-please web, where anonymous or pseudonymous u
 
 ### account creation / authentication
 
+### data collection / tracking
+
+### rate-limiting, anti-fraud
+
 ## Definitions
 
 user, holder
@@ -118,3 +126,13 @@ https://blogs.lse.ac.uk/parenting4digitalfuture/2021/11/17/age-assurance/
 
 R Street on the First Amendment right in the US to anonymous use of the Internet:
 https://www.rstreet.org/commentary/age-verification-methods-in-their-current-forms-threaten-our-first-amendment-right-to-anonymity/
+
+Rick Byers on risks and mitigations:
+https://github.com/RByers/identity-credential/blob/risks/risks.md
+
+## Acknowledgements
+
+Thanks to reviewers and contributors, including:
+
+* PING
+* dkg
