@@ -130,6 +130,14 @@ https://www.rstreet.org/commentary/age-verification-methods-in-their-current-for
 Rick Byers on risks and mitigations:
 https://github.com/RByers/identity-credential/blob/risks/risks.md
 
+## Standards venues
+
+Relevant work is ongoing in the following, non-exhaustive, list of places:
+
+* [Verifiable Credentials Working Group](https://www.w3.org/2017/vc/WG/)
+* [WICG Identity Credential repo](https://github.com/WICG/identity-credential)
+* [Credentials Community Group](https://w3c-ccg.github.io/)
+
 ## Acknowledgements
 
 Thanks to reviewers and contributors, including:
