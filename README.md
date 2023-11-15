@@ -1,4 +1,4 @@
-[User considerations for credential presentation on the Web](credentials-age-considerations.md) contains in-progress list of concerns and implications of identity-verification and credential presentation, for consideration in Internet and Web standardization.
+[User considerations for credential presentation on the Web](credentials-considerations.md) contains in-progress list of concerns and implications of identity-verification and credential presentation, for consideration in Internet and Web standardization.
 
 ---
 
