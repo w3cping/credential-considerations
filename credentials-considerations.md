@@ -2,7 +2,7 @@
 
 ### Status of this document
 
-Just an outline of the many concerns related to these areas of work, for discussion starting.
+An outline of the many concerns related to these areas of work, for discussion starting, and initial principles for addressing user considerations.
 
 Editor: [Nick Doty](https://npdoty.name), <ndoty@cdt.org>
 
@@ -21,6 +21,22 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 * what information does a user have when deciding whether to share credential information? how will information be retained, used, sold or shared? (transparency; control)
 
 There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and **surveillance** becomes commonplace.
+
+### Selective disclosure
+
+Rather than complete documents, sites should request and users should present only the particular claims necessary to satisfy a particular intended use. Protocols for issuing, requesting and presenting credentials should facilitate presentation of minimal information.
+
+This is a specific instance of the [basic principles of data minimization](https://w3ctag.github.io/privacy-principles/#data-minimization).
+
+See also: [abstract claims](https://www.w3.org/TR/vc-data-model/#favor-abstract-claims); [predicate proofs](https://www.w3.org/TR/vc-imp-guide/#predicates).
+
+### Unlinkable presentations
+
+### In-context explanations
+
+### Friction
+
+### No phoning home
 
 ## Online vs. Offline
 
@@ -79,6 +95,10 @@ Access to high-assurance identity credentials presents risks of **discrimination
 * how does the user (or their agent) know to whom they are disclosing this information?
 * how will sites that improperly collect, or use credentials in abusive ways, be held accountable? (these are questions both for user agents and out-of-band accountability mechanisms)
 * what kinds of use case regulations do we expect to be placed on these systems (legally/politically)? and what protocol mechanisms will be in place that support such regulations?
+
+### Registration
+
+### Reporting abuse
 
 ## Alternatives
 
