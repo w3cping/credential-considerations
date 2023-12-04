@@ -33,7 +33,7 @@ In addition, some people are unwilling or unable to rely on government-issued id
 
 ### Widening the use of high-assurance identity beyond user expectations
 
-When a user has a legitimate need to use their high-assurance identity, there's a risk of that information getting used for scenarios broader than they intended. For example, using a government ID to enable consumption of content not intended for children resulting in a unique identifier being joined to the user's social media profile for the purposes of more effective ad targeting. Additionally, a security breach of a website with legitimate need for RWI could lead to greater consequences for identity theft or the trade of personal user information on the black market.
+When a user has a legitimate need to use their high-assurance identity, there's a risk of that information getting used for scenarios broader than they intended. For example, using a government ID to enable consumption of content not intended for children resulting in a unique identifier being joined to the user's social media profile for the purposes of more effective ad targeting. Additionally, a security breach of a website with legitimate need for RWI could lead to greater consequences for identity theft or the trade of personal user information on illicit markets.
 
 ### Censorship and reduction in access to free information
 
