@@ -148,7 +148,7 @@ R Street on the First Amendment right in the US to anonymous use of the Internet
 https://www.rstreet.org/commentary/age-verification-methods-in-their-current-forms-threaten-our-first-amendment-right-to-anonymity/
 
 Rick Byers on risks and mitigations:
-https://github.com/RByers/identity-credential/blob/risks/risks.md
+https://github.com/w3cping/credential-considerations/blob/main/risks.md
 
 ## Standards venues
 
