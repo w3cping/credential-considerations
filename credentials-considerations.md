@@ -138,7 +138,17 @@ Access to high-assurance identity credentials presents risks of **discrimination
 
 ### Registration
 
+To limit the large scale abuse of inappropriate solicitation of high assurance government-issued credentials, holders can confirm that the verifier has registered their use case and justification, and had it reviewed by a relevant authority.
+
+> Example: eIDAS regulations require that verifiers register with a national regulator, identifying themseleves, their use case for identity credentials and the specific information they will request from users. Wallets are intended to limit provided information to what is documented in these registrations.
+> 
+> [EU Digital Identity Reform: The Good, Bad & Ugly in the eIDAS Regulation](https://epicenter.works/en/content/eu-digital-identity-reform-the-good-bad-ugly-in-the-eidas-regulation), see "Use Case Regulation".
+
 ### Reporting abuse
+
+When solicitation of government-issued credentials is, inevitably, done inappropriately, users should have a straightforward means to report abuse.
+
+[Registration](#registration) could include identification of how and where to report abuse, in order to facilitate both technical limitation on access and regulatory oversight.
 
 ## Alternatives
 
