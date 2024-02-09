@@ -10,7 +10,7 @@ Editor: [Nick Doty](https://npdoty.name), <ndoty@cdt.org>
 
 Many websites, some in response to legal requirements, wish to access an issued identity credential for the user, often to limit access to use of a service to people of a certain age or to confirm a legal identity. Web standards have been proposed to allow sites to request, from a user agent (browser or wallet provider) either an identity credential, or confirmation of some particular property (age, age bracket, institutional affiliation, etc.). These proposals introduce various concerns for the rights of users, including privacy and free expression online.
 
-Separate from whether these technical mechanisms are advisable at all, or advisable for Internet or Web standardization, any proposal should directly consider the impacts on human rights (listed, non-exhaustively, below).
+Separate from whether these technical mechanisms are advisable at all, or advisable for Internet or Web standardization, any proposal should directly consider the impacts on human rights (listed, non-exhaustively, below). A non-exhaustive list of principles to satisfy protection of human rights and known mechanisms to provide those protections is included.
 
 ## Privacy
 
@@ -22,6 +22,8 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 
 There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and **surveillance** becomes commonplace.
 
+Privacy is a complex, contested concept, but here would include privacy _from_ the verifier, privacy from the issuer, and even privacy from the wallet or the browser. 
+
 ### Selective disclosure
 
 Rather than complete documents, sites should request and users should present only the particular claims necessary to satisfy a particular intended use. Protocols for issuing, requesting and presenting credentials should facilitate presentation of minimal information.
@@ -32,11 +34,27 @@ See also: [abstract claims](https://www.w3.org/TR/vc-data-model/#favor-abstract-
 
 ### Unlinkable presentations
 
+Presenting claims or properties from a credential should not also provide a unique identifier or otherwise facilitate linking of presentation of a claim in different contexts.
+
+In some cases the properties themselves are designed for linkability (like a unique government-issued ID number, or a name or address). But many claims, like age or country are not by themselves inherently linkable.
+
+Zero-knowledge proofs may a way to provide a signed proof of a claim from the issuer to the verifier without revealing a linkable signature between two different presentations to different verifiers.
+
+Blind signatures may be a way to provide unlinkability of a presentation between a verifier and the issuer. (The verifier and issuer can confirm that the presented credential was issued by the issuer, but not to which holder it was issued.)
+
 ### In-context explanations
 
 ### Friction
 
 ### No phoning home
+
+Issuers should not learn about how, when, or with what verifiers a holder uses their issued credentials.
+
+It's likely that in some significant scenarios the wallet software will be provided by the issuer or by a very limited set of parties who have agreements with the issuer. (This is especially likely in some cases in the US with governmental control, but may apply in other scenarios as well.) So while wallets should be user agents and users should be able to choose and trust them, we should also protect against the threat that a wallet may not be trustworthy or that there may be a particular risk of collusion between wallet software and issuers.
+
+Phoning home may also be a threat if verifiers collude with issuers. In cases of identifiable credentials, this threat cannot be prevented through technical means, but in cases of selective disclosure and unlinkable presentations, it can be.
+
+Phoning home may be a threat if the verifier has some reason to check with the issuer to verify a credential at the time that it is presented; see revocation.
 
 ## Online vs. Offline
 
@@ -51,6 +69,14 @@ See also: [abstract claims](https://www.w3.org/TR/vc-data-model/#favor-abstract-
 * what kinds of delays are inherent in revocation?
 * What happens to the system when revocation information (or confirmation of non-revocation) is not available?
 * To whom is revocation information made available? (Does every service I've authenticated with learn when my driver's license is revoked or my legal name is changed?)
+
+### Revocation support should not create linkability
+
+For unlinkable presentations -- especially important for maintaining the privacy protection of selective disclosure -- revocation-checking should not introduce an identifier that is linkable between different origins.
+
+### Extended validity times
+
+For selective disclosure uses, validity, expiry or revocation caching times must be significant, such that neither the holder nor the verifier reveals the pattern of when credentials have been used. (Extended validity also enables offline presentation and verification.)
 
 ## In-Person Presentation
 
@@ -164,3 +190,5 @@ Thanks to reviewers and contributors, including:
 
 * PING
 * dkg
+* ACLU
+* EFF 
