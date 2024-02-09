@@ -14,13 +14,13 @@ Separate from whether these technical mechanisms are advisable at all, or advisa
 
 ## Privacy
 
+There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and **surveillance** becomes commonplace.
+
 * how are identity characteristics shared with origins? (minimization; control)
 * what does the identity provider learn about the user's activity?
 * do identities or identity properties contribute to linkability of activity between or within sites? 
 * when and in what contexts will credentials (or particular credential properties such as age) be requested once available? (see Rigidity and Accountability, below)
 * what information does a user have when deciding whether to share credential information? how will information be retained, used, sold or shared? (transparency; control)
-
-There is a real danger of a papers-please web, where anonymous or pseudonymous use of online services becomes heavily restricted, and **surveillance** becomes commonplace.
 
 Privacy is a complex, contested concept, but here would include privacy _from_ the verifier, privacy from the issuer, and even privacy from the wallet or the browser. 
 
@@ -43,6 +43,20 @@ Zero-knowledge proofs may a way to provide a signed proof of a claim from the is
 Blind signatures may be a way to provide unlinkability of a presentation between a verifier and the issuer. (The verifier and issuer can confirm that the presented credential was issued by the issuer, but not to which holder it was issued.)
 
 ### In-context explanations
+
+Credentials must only be provided when the user chooses to present them. In order for the user to have a genuine choice, the user must have an informed understanding of what they are presenting, for what reason, and the implications of doing so. As with other examples of [asking for permission on the Web](https://github.com/w3cping/adding-permissions), explanations should be provided in the context of the web site and the action the user is taking. Where browsers, wallets and other user agents are all involved in the selection and presentation of credentials, explanations must be clearly and consistently communicated throughout the ceremonial process.
+
+Explanations should describe who is accessing identity credentials, what attributes, capabilities or inferences are accessed, for what purpose the credential is needed, and how data will be used, shared and retained. In order to ensure appropriate use of government-issued high-assurance credentials and to provide [accountability against abuse](#accountability), explanations should also include the justification for the use of credentials, a declaration of that usage and an evaluation or attestation by a reviewing authority.
+
+> Example in-context explanation: "To sign up for this governmental program, Agency X may access, with your permission, your name and identity number in order to confirm your eligibility for the program, as required by Statute Y. This data will be used to confirm your identity, your income level and citizenship status. Data Protection Authority Z has confirmed that this is a legitimate request and that policies and technical mechanisms are in place to assure that your credentials are not used for any other purpose or shared with other parties."
+
+This information should be consistently presented in both plain language and machine-readable format.
+
+Where credentials can be used to recognize people (for example, where presentations are linkable or identifiable credentials are presented), prompts should explicitly indicate the tracking capability, for consumption by user agents and users, but also by researchers and regulators.
+
+This is a specific instance of the [privacy principles of transparency](https://w3ctag.github.io/privacy-principles/#transparency).
+
+### Voluntary presentation
 
 ### Friction
 
@@ -76,7 +90,7 @@ For unlinkable presentations -- especially important for maintaining the privacy
 
 ### Extended validity times
 
-For selective disclosure uses, validity, expiry or revocation caching times must be significant, such that neither the holder nor the verifier reveals the pattern of when credentials have been used. (Extended validity also enables offline presentation and verification.)
+For selective disclosure uses, validity, expiry or revocation caching times must be significant, such that neither the holder nor the verifier reveals the pattern of when credentials are used. (Extended validity also enables offline presentation and verification.)
 
 ## In-Person Presentation
 
@@ -174,14 +188,14 @@ R Street on the First Amendment right in the US to anonymous use of the Internet
 https://www.rstreet.org/commentary/age-verification-methods-in-their-current-forms-threaten-our-first-amendment-right-to-anonymity/
 
 Rick Byers on risks and mitigations:
-https://github.com/RByers/identity-credential/blob/risks/risks.md
+https://github.com/w3cping/credential-considerations/blob/main/risks.md
 
 ## Standards venues
 
 Relevant work is ongoing in the following, non-exhaustive, list of places:
 
 * [Verifiable Credentials Working Group](https://www.w3.org/2017/vc/WG/)
-* [WICG Identity Credential repo](https://github.com/WICG/identity-credential)
+* [WICG Digital Identities repo](https://github.com/WICG/digital-identities)
 * [Credentials Community Group](https://w3c-ccg.github.io/)
 
 ## Acknowledgements
