@@ -34,13 +34,17 @@ See also: [abstract claims](https://www.w3.org/TR/vc-data-model/#favor-abstract-
 
 ### Unlinkable presentations
 
-Presenting claims or properties from a credential should not also provide a unique identifier or otherwise facilitate linking of presentation of a claim in different contexts.
+Presenting claims or properties from a credential should not also provide a unique identifier or otherwise facilitate linking of presentation of a claim in different contexts. If presentations are linkable, there is a substantial threat of unwanted cross-context recognition.
 
-In some cases the properties themselves are designed for linkability (like a unique government-issued ID number, or a name or address). But many claims, like age or country are not by themselves inherently linkable.
+In some cases the properties themselves are designed for linkability (like a unique government-issued ID number, or a name or address). But many claims, like age or country are not by themselves **inherently linkable**.
+
+For any credential claims that are not inherently linkable from credentials that are designed for usage across multiple origins, presentations should be made unlinkable. Specifications should define the necessary, testable requirements for presentations to be reasonably unlinkable, and identify all claims that are *inherently linkable*.
 
 Zero-knowledge proofs may a way to provide a signed proof of a claim from the issuer to the verifier without revealing a linkable signature between two different presentations to different verifiers.
 
 Blind signatures may be a way to provide unlinkability of a presentation between a verifier and the issuer. (The verifier and issuer can confirm that the presented credential was issued by the issuer, but not to which holder it was issued.)
+
+Even when designed for unlinkable presentations and without using any *inherently linkable* claims, presented information may be combined with other characteristics in order to fingerprint or identify a user. Specifications should both minimize and identify these linkability risks, and holder software should provide guidance and protection to users regarding those risks.
 
 ### In-context explanations
 
