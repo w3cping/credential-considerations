@@ -38,7 +38,7 @@ Presenting claims or properties from a credential should not also provide a uniq
 
 In some cases the properties themselves are designed for linkability (like a unique government-issued ID number, or a name or address). But many claims, like age or country are not by themselves **inherently linkable**.
 
-For any credential claims that are not inherently linkable from credentials that are designed for usage across multiple origins, presentations should be made unlinkable. Specifications should define the necessary, testable requirements for presentations to be reasonably unlinkable, and identify all claims that are *inherently linkable*.
+For any credential claims that are not inherently linkable from credentials that are designed for usage across multiple origins, presentations should be made unlinkable. Support for other capabilities, such as revocation status, should not make an otherwise unlinkable presentation linkable (see: [Revocation](#revocation-linkability), below). Specifications should define the necessary, testable requirements for presentations to be reasonably unlinkable, and identify all claims that are *inherently linkable*.  
 
 Zero-knowledge proofs may a way to provide a signed proof of a claim from the issuer to the verifier without revealing a linkable signature between two different presentations to different verifiers.
 
@@ -88,9 +88,11 @@ Phoning home may be a threat if the verifier has some reason to check with the i
 * What happens to the system when revocation information (or confirmation of non-revocation) is not available?
 * To whom is revocation information made available? (Does every service I've authenticated with learn when my driver's license is revoked or my legal name is changed?)
 
-### Revocation support should not create linkability
+### Revocation support should not create linkability {#revocation-linkability}
 
 For unlinkable presentations -- especially important for maintaining the privacy protection of selective disclosure -- revocation-checking should not introduce an identifier that is linkable between different origins.
+
+> Example: Some revocation methods, like [Bitstring Status Lists](https://www.w3.org/TR/vc-bitstring-status-list/), should not be used in unlinkable presentations or other presentations with selective disclosure. (See [Unnecessary Correlation](https://w3c.github.io/vc-bitstring-status-list/#unnecessary-correlation).)
 
 ### Extended validity times
 
