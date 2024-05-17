@@ -38,7 +38,7 @@ Presenting claims or properties from a credential should not also provide a uniq
 
 In some cases the properties themselves are designed for linkability (like a unique government-issued ID number, or a name or address). But many claims, like age or country are not by themselves **inherently linkable**.
 
-For any credential claims that are not inherently linkable from credentials that are designed for usage across multiple origins, presentations should be made unlinkable. Support for other capabilities, such as revocation status, should not make an otherwise unlinkable presentation linkable (see: [Revocation](#revocation-linkability), below). Specifications should define the necessary, testable requirements for presentations to be reasonably unlinkable, and identify all claims that are *inherently linkable*.  
+If a credential may be used across multiple origins and contains claims that are not inherently linkable, presentations of those claims should be made unlinkable. Support for other capabilities, such as revocation status, should not make an otherwise unlinkable presentation linkable (see: [Revocation](#revocation-linkability), below). Specifications should define the necessary, testable requirements for presentations to be reasonably unlinkable, and identify all claims that are *inherently linkable*.  
 
 Zero-knowledge proofs may a way to provide a signed proof of a claim from the issuer to the verifier without revealing a linkable signature between two different presentations to different verifiers.
 
