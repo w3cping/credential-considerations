@@ -156,6 +156,12 @@ When solicitation of government-issued credentials is, inevitably, done inapprop
 
 [Registration](#registration) could include identification of how and where to report abuse, in order to facilitate both technical limitation on access and regulatory oversight.
 
+### Data Retention
+
+* How will required data retention impact users in the event of a data breach?
+* How will data rentention impact legal requests for information related to the purposes of the use case? E.g. Will sites be required to provide information age of users using a service?
+* How will data rentention impact legal requests unrelated to the initial use cases? For example, will sites that are required to collect mDLs be subpoena'd and have this information requested for unrelated legal issues that happen on the same site? Example of this with IP addresses (that failed) was https://arstechnica.com/tech-policy/2024/02/reddit-beats-film-industry-again-wont-have-to-reveal-pirates-ip-addresses/
+
 ## Alternatives
 
 * how are these use cases being addressed today? will credential and age verification technologies replace those mechanisms, or be used in addition to them?
