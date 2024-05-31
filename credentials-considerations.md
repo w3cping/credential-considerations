@@ -6,7 +6,7 @@ An outline of the risks and initial principles for addressing user consideration
 
 Editors: 
 * [Nick Doty](https://npdoty.name), Center for Democracy & Technology, <ndoty@cdt.org>
-* Rick Byers, Google
+* Rick Byers, Google, <rbyers@chromium.org>
 
 ## Abstract
 
@@ -71,7 +71,7 @@ Privacy risks also have free expression implications here: who will be restricte
 
 ### Consolidation
 
-Depending on the mechanisms used for presenting identity, there's a risk that user-choice could be impeded by the policies of intermediaries (such as operating systems and browsers), issuers or verifiers. For example, platforms could potentially self-preference their own identity services, or government issuers could restrict 
+Depending on the mechanisms used for presenting identity, there's a risk that user-choice could be impeded by the policies of intermediaries (such as operating systems and browsers), issuers or verifiers. For example, platforms could potentially self-preference their own identity services, or government issuers could restrict choice of wallets to those developed by the government.
 
 * to what extent do these systems rely on centralized providers?
 * how can an origin reliably accept attestations or credentials from a wide range of providers, rather than just 1 or 2?
